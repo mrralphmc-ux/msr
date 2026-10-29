@@ -1,4 +1,7 @@
 [
+  { "v": "11.62", "d": "2026-10-29", "t": [
+    "HUD opacity and hide, adjustable while riding: an eye button at the top centre opens a quick slider (20-100%) and a HIDE HUD / SHOW HUD button, [ and ] keys step the opacity, H hides or shows the HUD. Also in Options > Game > Screen. Hiding is visual only: touch controls keep working, and the faint eye button always stays so the HUD can come back."
+  ] },
   { "v": "11.61", "d": "2026-10-28", "t": [
     "The browser's own right-click / touch-and-hold menu is switched off everywhere (game, menus, garage, map): no context menu, no link or image drag, no text-selection handles or magnifier. Name, room code and server fields still allow paste."
   ] },

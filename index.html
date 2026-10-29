@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no,interactive-widget=resizes-visual">
 <title>CPM Motor Edition</title>
-<link rel="stylesheet" href="css/style.css?v=11.61">
+<link rel="stylesheet" href="css/style.css?v=11.62">
 <!-- the import map must come before any module load (modulepreload counts): Firefox ignores a later one ("three" was not remapped) -->
-<script type="importmap">{"imports":{"./js/menu.js":"./js/menu.js?v=11.61","./js/audio.js":"./js/audio.js?v=11.61","./js/config.js":"./js/config.js?v=11.61","./js/controls.js":"./js/controls.js?v=11.61","./js/drivetrain.js":"./js/drivetrain.js?v=11.61","./js/garage.js":"./js/garage.js?v=11.61","./js/studio.js":"./js/studio.js?v=11.61","./js/hud.js":"./js/hud.js?v=11.61","./js/main.js":"./js/main.js?v=11.61","./js/missions.js":"./js/missions.js?v=11.61","./js/model.js":"./js/model.js?v=11.61","./js/options.js":"./js/options.js?v=11.61","./js/perf.js":"./js/perf.js?v=11.61","./js/physics.js":"./js/physics.js?v=11.61","./js/tyre.js":"./js/tyre.js?v=11.61","./js/rapier.js":"./js/rapier.js?v=11.61","./js/renderer.js":"./js/renderer.js?v=11.61","./js/spec.js":"./js/spec.js?v=11.61","./js/state.js":"./js/state.js?v=11.61","./js/util.js":"./js/util.js?v=11.61","./js/world.js":"./js/world.js?v=11.61","./js/roads.js":"./js/roads.js?v=11.61","./js/tex.js":"./js/tex.js?v=11.61","./js/gpucull.js":"./js/gpucull.js?v=11.61","./js/net.js":"./js/net.js?v=11.61","./js/race.js":"./js/race.js?v=11.61","./js/ride.js":"./js/ride.js?v=11.61","./js/ignition.js":"./js/ignition.js?v=11.61","./js/daynight.js":"./js/daynight.js?v=11.61","./js/lights.js":"./js/lights.js?v=11.61","./js/batch.js":"./js/batch.js?v=11.61","./js/bikecard.js":"./js/bikecard.js?v=11.61","./js/layout.js":"./js/layout.js?v=11.61","./js/layoutcalc.js":"./js/layoutcalc.js?v=11.61","./js/map.js":"./js/map.js?v=11.61","./js/foot.js":"./js/foot.js?v=11.61","./js/mblur.js":"./js/mblur.js?v=11.61","./js/footfig.js":"./js/footfig.js?v=11.61","@dimforge/rapier3d-compat":"./vendor/rapier/rapier.mjs","three":"./vendor/three/build/three.webgpu.js","three/webgpu":"./vendor/three/build/three.webgpu.js","three/tsl":"./vendor/three/build/three.tsl.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+<script type="importmap">{"imports":{"./js/menu.js":"./js/menu.js?v=11.62","./js/audio.js":"./js/audio.js?v=11.62","./js/config.js":"./js/config.js?v=11.62","./js/controls.js":"./js/controls.js?v=11.62","./js/drivetrain.js":"./js/drivetrain.js?v=11.62","./js/garage.js":"./js/garage.js?v=11.62","./js/studio.js":"./js/studio.js?v=11.62","./js/hud.js":"./js/hud.js?v=11.62","./js/main.js":"./js/main.js?v=11.62","./js/missions.js":"./js/missions.js?v=11.62","./js/model.js":"./js/model.js?v=11.62","./js/options.js":"./js/options.js?v=11.62","./js/perf.js":"./js/perf.js?v=11.62","./js/physics.js":"./js/physics.js?v=11.62","./js/tyre.js":"./js/tyre.js?v=11.62","./js/rapier.js":"./js/rapier.js?v=11.62","./js/renderer.js":"./js/renderer.js?v=11.62","./js/spec.js":"./js/spec.js?v=11.62","./js/state.js":"./js/state.js?v=11.62","./js/util.js":"./js/util.js?v=11.62","./js/world.js":"./js/world.js?v=11.62","./js/roads.js":"./js/roads.js?v=11.62","./js/tex.js":"./js/tex.js?v=11.62","./js/gpucull.js":"./js/gpucull.js?v=11.62","./js/net.js":"./js/net.js?v=11.62","./js/race.js":"./js/race.js?v=11.62","./js/ride.js":"./js/ride.js?v=11.62","./js/ignition.js":"./js/ignition.js?v=11.62","./js/daynight.js":"./js/daynight.js?v=11.62","./js/lights.js":"./js/lights.js?v=11.62","./js/batch.js":"./js/batch.js?v=11.62","./js/bikecard.js":"./js/bikecard.js?v=11.62","./js/layout.js":"./js/layout.js?v=11.62","./js/layoutcalc.js":"./js/layoutcalc.js?v=11.62","./js/map.js":"./js/map.js?v=11.62","./js/foot.js":"./js/foot.js?v=11.62","./js/mblur.js":"./js/mblur.js?v=11.62","./js/footfig.js":"./js/footfig.js?v=11.62","@dimforge/rapier3d-compat":"./vendor/rapier/rapier.mjs","three":"./vendor/three/build/three.webgpu.js","three/webgpu":"./vendor/three/build/three.webgpu.js","three/tsl":"./vendor/three/build/three.tsl.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 <!-- start the heavy downloads at HTML parse, not after menu.js runs (same URLs as the importmap, so menu.js's fetches and import() reuse them) -->
 <link rel="modulepreload" href="./vendor/three/build/three.webgpu.js">
 <link rel="modulepreload" href="./vendor/three/build/three.core.js">
@@ -33,6 +33,8 @@
 <div id="mis" hidden><span id="misT"></span><button class="b" id="misNext" hidden>Next</button><button class="b" id="misX">✕</button></div>
 <div id="top"><button class="b" id="bMenu" aria-label="Menu">☰</button><button class="b" id="bCam">CAM</button><button class="b" id="bGar">GARAGE</button><button class="b" id="bReset">RESET</button><button class="b" id="bOpt" aria-label="Options">⚙</button></div>
 <button class="b" id="bFoot" hidden>GET OFF</button>
+<button class="b" id="bHud" aria-label="HUD opacity and hide" aria-expanded="false" aria-controls="hudQ">&#128065;</button>
+<div id="hudQ" hidden><label>HUD opacity<output id="hudQo">100%</output><input id="hudQs" type="range" min="20" max="100" step="5" value="100" aria-label="HUD opacity"></label><button class="b" id="hudQh">HIDE HUD</button></div>
 
 <div id="tc">
   <div id="joy"><i id="joyK"></i></div><button id="jumpB">JUMP</button>
@@ -106,6 +108,7 @@
         <b>E / Q</b><span>Manual bikes: shift up / down (1-N-2-3-4-5-6). Pull the clutch first, unless E-Clutch is on</span>
         <b>Space</b><span>Manual: clutch (hold to pull) · Scooter: rear brake lever</span>
         <b>R · C · G · O</b><span>Start engine (scooter: hold the brake) · camera · garage · options</span>
+        <b>H · [ · ]</b><span>Hide / show the HUD · HUD less / more opaque (also the eye button at the top, or Options &gt; Game)</span>
         <b>M</b><span>Map: or tap the minimap. Tap the map to drop a pin, SET WAYPOINT to get a beacon and a pointer on the minimap</span>
         <b>Esc</b><span>Pause menu (closes the map first)</span>
         <b>Touch</b><span>Turn the handlebar (bottom left), drag the throttle grip, hold BRAKE. Manual: drag CLUTCH down to pull, ▲▼ to shift</span>
@@ -138,6 +141,6 @@
   <div id="oApply" hidden><span id="oApplyT"></span><button class="b" id="oReload">Apply &amp; reload</button></div>
 </div></div>
 
-<script type="module" src="js/menu.js?v=11.61"></script>
+<script type="module" src="js/menu.js?v=11.62"></script>
 </body>
 </html>
