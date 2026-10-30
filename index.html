@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no,interactive-widget=resizes-visual">
 <title>CPM Motor Edition</title>
-<link rel="stylesheet" href="css/style.css?v=11.62">
+<link rel="stylesheet" href="css/style.css?v=11.63">
 <!-- the import map must come before any module load (modulepreload counts): Firefox ignores a later one ("three" was not remapped) -->
-<script type="importmap">{"imports":{"./js/menu.js":"./js/menu.js?v=11.62","./js/audio.js":"./js/audio.js?v=11.62","./js/config.js":"./js/config.js?v=11.62","./js/controls.js":"./js/controls.js?v=11.62","./js/drivetrain.js":"./js/drivetrain.js?v=11.62","./js/garage.js":"./js/garage.js?v=11.62","./js/studio.js":"./js/studio.js?v=11.62","./js/hud.js":"./js/hud.js?v=11.62","./js/main.js":"./js/main.js?v=11.62","./js/missions.js":"./js/missions.js?v=11.62","./js/model.js":"./js/model.js?v=11.62","./js/options.js":"./js/options.js?v=11.62","./js/perf.js":"./js/perf.js?v=11.62","./js/physics.js":"./js/physics.js?v=11.62","./js/tyre.js":"./js/tyre.js?v=11.62","./js/rapier.js":"./js/rapier.js?v=11.62","./js/renderer.js":"./js/renderer.js?v=11.62","./js/spec.js":"./js/spec.js?v=11.62","./js/state.js":"./js/state.js?v=11.62","./js/util.js":"./js/util.js?v=11.62","./js/world.js":"./js/world.js?v=11.62","./js/roads.js":"./js/roads.js?v=11.62","./js/tex.js":"./js/tex.js?v=11.62","./js/gpucull.js":"./js/gpucull.js?v=11.62","./js/net.js":"./js/net.js?v=11.62","./js/race.js":"./js/race.js?v=11.62","./js/ride.js":"./js/ride.js?v=11.62","./js/ignition.js":"./js/ignition.js?v=11.62","./js/daynight.js":"./js/daynight.js?v=11.62","./js/lights.js":"./js/lights.js?v=11.62","./js/batch.js":"./js/batch.js?v=11.62","./js/bikecard.js":"./js/bikecard.js?v=11.62","./js/layout.js":"./js/layout.js?v=11.62","./js/layoutcalc.js":"./js/layoutcalc.js?v=11.62","./js/map.js":"./js/map.js?v=11.62","./js/foot.js":"./js/foot.js?v=11.62","./js/mblur.js":"./js/mblur.js?v=11.62","./js/footfig.js":"./js/footfig.js?v=11.62","@dimforge/rapier3d-compat":"./vendor/rapier/rapier.mjs","three":"./vendor/three/build/three.webgpu.js","three/webgpu":"./vendor/three/build/three.webgpu.js","three/tsl":"./vendor/three/build/three.tsl.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+<script type="importmap">{"imports":{"./js/menu.js":"./js/menu.js?v=11.63","./js/audio.js":"./js/audio.js?v=11.63","./js/config.js":"./js/config.js?v=11.63","./js/controls.js":"./js/controls.js?v=11.63","./js/drivetrain.js":"./js/drivetrain.js?v=11.63","./js/garage.js":"./js/garage.js?v=11.63","./js/studio.js":"./js/studio.js?v=11.63","./js/hud.js":"./js/hud.js?v=11.63","./js/main.js":"./js/main.js?v=11.63","./js/missions.js":"./js/missions.js?v=11.63","./js/model.js":"./js/model.js?v=11.63","./js/options.js":"./js/options.js?v=11.63","./js/perf.js":"./js/perf.js?v=11.63","./js/physics.js":"./js/physics.js?v=11.63","./js/tyre.js":"./js/tyre.js?v=11.63","./js/rapier.js":"./js/rapier.js?v=11.63","./js/renderer.js":"./js/renderer.js?v=11.63","./js/spec.js":"./js/spec.js?v=11.63","./js/state.js":"./js/state.js?v=11.63","./js/util.js":"./js/util.js?v=11.63","./js/world.js":"./js/world.js?v=11.63","./js/roads.js":"./js/roads.js?v=11.63","./js/tex.js":"./js/tex.js?v=11.63","./js/gpucull.js":"./js/gpucull.js?v=11.63","./js/net.js":"./js/net.js?v=11.63","./js/race.js":"./js/race.js?v=11.63","./js/ride.js":"./js/ride.js?v=11.63","./js/ignition.js":"./js/ignition.js?v=11.63","./js/daynight.js":"./js/daynight.js?v=11.63","./js/lights.js":"./js/lights.js?v=11.63","./js/batch.js":"./js/batch.js?v=11.63","./js/bikecard.js":"./js/bikecard.js?v=11.63","./js/layout.js":"./js/layout.js?v=11.63","./js/layoutcalc.js":"./js/layoutcalc.js?v=11.63","./js/map.js":"./js/map.js?v=11.63","./js/foot.js":"./js/foot.js?v=11.63","./js/mblur.js":"./js/mblur.js?v=11.63","./js/footfig.js":"./js/footfig.js?v=11.63","@dimforge/rapier3d-compat":"./vendor/rapier/rapier.mjs","three":"./vendor/three/build/three.webgpu.js","three/webgpu":"./vendor/three/build/three.webgpu.js","three/tsl":"./vendor/three/build/three.tsl.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 <!-- start the heavy downloads at HTML parse, not after menu.js runs (same URLs as the importmap, so menu.js's fetches and import() reuse them) -->
 <link rel="modulepreload" href="./vendor/three/build/three.webgpu.js">
 <link rel="modulepreload" href="./vendor/three/build/three.core.js">
@@ -60,22 +60,23 @@
       <linearGradient id="gSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a9cc4"/><stop offset="1" stop-color="#17557c"/></linearGradient>
     </defs>
     <rect width="1600" height="900" fill="url(#gSky)"/>
-    <circle cx="1180" cy="170" r="110" fill="#fff6d8" opacity=".25"/><circle cx="1180" cy="170" r="56" fill="#fff4c8"/>
+    <circle class="sun" cx="1180" cy="170" r="110" fill="#fff6d8" opacity=".25"/><circle cx="1180" cy="170" r="56" fill="#fff4c8"/>
     <g class="cl" fill="#fff" opacity=".92"><path d="M300 150l40-26 52 4 30 22 42 2 18 18H262z"/><path d="M820 92l34-20 46 6 22 16 30-2 16 14H790z" opacity=".8"/></g>
     <g class="cl c2" fill="#fff" opacity=".85"><path d="M1380 250l30-18 44 2 26 18 34 4 14 14h-176z"/><path d="M560 300l26-14 36 4 18 12 26 2 10 10H540z" opacity=".7"/></g>
+    <g transform="translate(0 210)"><g class="bd"><g fill="none" stroke="#31485c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M0 0q9-11 18 0q9-11 18 0"/><path d="M60-26q7-9 14 0q7-9 14 0"/><path d="M-50 20q6-8 12 0q6-8 12 0"/></g></g></g>
     <path d="M0 612l120-28 90 10 120-24 70 30 60 12H0z" fill="#8fb3c2"/><path d="M300 612l80-18 60 8 50 10z" fill="#7ea5b6"/>
     <rect y="610" width="1600" height="290" fill="url(#gSea)"/>
-    <g fill="#fff" opacity=".22"><rect x="40" y="640" width="180" height="4"/><rect x="380" y="668" width="240" height="4"/><rect x="120" y="720" width="300" height="5"/><rect x="520" y="780" width="260" height="6"/><rect x="60" y="840" width="380" height="6"/><rect x="640" y="700" width="140" height="4"/></g>
+    <g class="wv" fill="#fff" opacity=".22"><rect x="40" y="640" width="180" height="4"/><rect x="380" y="668" width="240" height="4"/><rect x="120" y="720" width="300" height="5"/><rect x="520" y="780" width="260" height="6"/><rect x="60" y="840" width="380" height="6"/><rect x="640" y="700" width="140" height="4"/></g>
     <path d="M640 690l120-40 160-22 170 6 200-18 200 10 110 14v80H640z" fill="#e6d197"/>
     <path d="M700 676l130-36 150-18 160 8 190-20 170 8 100 10v50l-120-6-150 12-190-6-170 10-160-4z" fill="#4c9a3c"/>
     <path d="M820 640l90-60 80 20 70-30 90 40 30 40-160 10-170 0z" fill="#3e8833"/><path d="M910 580l80 20 70-30-40 70z" fill="#57a546"/>
     <path d="M1060 640l160-330h70l170 330z" fill="#5d7d43"/><path d="M1220 310h70l170 330-150 0z" fill="#46663a"/><path d="M1060 640l160-330 30 330z" fill="#6f9150"/>
-    <path d="M1220 310l18-14h34l18 14z" fill="#4a3a30"/><path d="M1240 296c-10-30 20-40 10-70 20 10 30 40 14 70z" fill="#d8dde0" opacity=".55"/>
+    <path d="M1220 310l18-14h34l18 14z" fill="#4a3a30"/><path class="sm" d="M1240 296c-10-30 20-40 10-70 20 10 30 40 14 70z" fill="#d8dde0" opacity=".55"/>
     <g fill="none" stroke="#8fc45c" stroke-width="5" opacity=".7"><path d="M1110 560l70-4M1130 520l64-6M1150 480l56-6M1172 440l46-4"/></g>
     <path d="M1380 640l110-90 110 40v70z" fill="#3e8833"/><path d="M1490 550l110 40v40z" fill="#336f2b"/>
     <g class="palm"><path d="M760 690l6-90 6 0-2 90z" fill="#7a5a3a"/><path d="M769 600l-60 10 50-22zM769 600l60 12-48-26zM769 600l-40-36 30 26zM769 600l46-34-36 32zM769 600l-4-44 10 42z" fill="#2f7d32"/></g>
-    <g class="palm"><path d="M880 684l-6-110 7 0 8 110z" fill="#6e5034"/><path d="M877 576l-66 4 54-22zM877 576l64 14-52-26zM877 576l-46-40 34 28zM877 576l52-36-40 34zM877 576l2-48 8 46z" fill="#27702b"/></g>
-    <g class="palm"><path d="M1530 690l4-80 6 0-1 80z" fill="#7a5a3a"/><path d="M1537 612l-52 8 44-20zM1537 612l50 12-42-24zM1537 612l-34-32 26 24zM1537 612l40-30-32 28z" fill="#2f7d32"/></g>
+    <g class="palm p2"><path d="M880 684l-6-110 7 0 8 110z" fill="#6e5034"/><path d="M877 576l-66 4 54-22zM877 576l64 14-52-26zM877 576l-46-40 34 28zM877 576l52-36-40 34zM877 576l2-48 8 46z" fill="#27702b"/></g>
+    <g class="palm p3"><path d="M1530 690l4-80 6 0-1 80z" fill="#7a5a3a"/><path d="M1537 612l-52 8 44-20zM1537 612l50 12-42-24zM1537 612l-34-32 26 24zM1537 612l40-30-32 28z" fill="#2f7d32"/></g>
     <path d="M640 700l340-12 300 8 320-10v8l-320 12-300-8-340 10z" fill="#b8b3a6"/>
   </svg>
   <div id="mUI">
@@ -141,6 +142,6 @@
   <div id="oApply" hidden><span id="oApplyT"></span><button class="b" id="oReload">Apply &amp; reload</button></div>
 </div></div>
 
-<script type="module" src="js/menu.js?v=11.62"></script>
+<script type="module" src="js/menu.js?v=11.63"></script>
 </body>
 </html>

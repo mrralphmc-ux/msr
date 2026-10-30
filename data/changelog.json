@@ -1,4 +1,7 @@
 [
+  { "v": "11.63", "d": "2026-10-30", "t": [
+    "Livelier menus. Main menu: the island backdrop now moves (sea glints drift, the sun pulses, palms sway, the volcano smokes, birds fly past), the title shimmers, PLAY has a light sweep, panes and buttons slide in one after another and buttons slide on hover. How to ride: keys look like keycaps and light up when you press them. Options: the panel pops in, each tab's rows cascade in, switches spring with a glow, the picked choice pops, and slider values bump as you drag. All motion is off when the device asks for reduced motion."
+  ] },
   { "v": "11.62", "d": "2026-10-29", "t": [
     "HUD opacity and hide, adjustable while riding: an eye button at the top centre opens a quick slider (20-100%) and a HIDE HUD / SHOW HUD button, [ and ] keys step the opacity, H hides or shows the HUD. Also in Options > Game > Screen. Hiding is visual only: touch controls keep working, and the faint eye button always stays so the HUD can come back."
   ] },
